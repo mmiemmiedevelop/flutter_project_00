@@ -50,7 +50,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 35),
-            Image.asset('assets/bg_main.png', width: 150, height: 150),
+            Image.asset('assets/images/bg_main.png', width: 150, height: 150),
             const SizedBox(height: 29),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
