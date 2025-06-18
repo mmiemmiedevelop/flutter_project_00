@@ -9,6 +9,7 @@ class Page02 extends StatelessWidget {
       backgroundColor: const Color(0xFFFFF8DE),
 
       appBar: AppBar(
+        centerTitle: false,
         toolbarHeight: 60,
         automaticallyImplyLeading: false,
         backgroundColor: Color(0xFFFFF8DE),
