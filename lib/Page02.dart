@@ -19,7 +19,8 @@ class Page02 extends StatelessWidget {
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Image.asset( //뒤로가기버튼
+              Image.asset(
+                //뒤로가기버튼
                 'assets/images/icon_arrow.png',
                 width: 20,
                 height: 20,
@@ -33,7 +34,8 @@ class Page02 extends StatelessWidget {
           ),
         ),
 
-        flexibleSpace: Stack( //개인이미지
+        flexibleSpace: Stack(
+          //개인이미지
           clipBehavior: Clip.none,
           children: [
             Positioned(
@@ -71,31 +73,61 @@ class Page02 extends StatelessWidget {
               ),
             ],
           ),
-          width: 300, height: 500,
+          width: 300,
+          height: 500,
 
-          child: Column( 
+          child: Column(
             children: [
-              Padding(padding: EdgeInsets.fromLTRB(0,60,0,0),),
-              Container(width: 100, height: 40,
-              child: Text('이 샘', textAlign: TextAlign.center, //이름
-              style: TextStyle(color: Colors.black,
-              fontSize: 30, fontWeight: FontWeight.bold)),
+              Padding(padding: EdgeInsets.fromLTRB(0, 60, 0, 0)),
+              Container(
+                width: 100,
+                height: 40,
+                child: Text(
+                  '이 샘',
+                  textAlign: TextAlign.center, //이름
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
               const SizedBox(height: 10),
-              Container(width: 100, height: 30,
-              child: Text('INTP', textAlign: TextAlign.center, //mbti
-              style: TextStyle(color: Color(0xFFFFDF60),
-              fontSize: 20, fontWeight: FontWeight.bold)),
+              Container(
+                width: 100,
+                height: 30,
+                child: Text(
+                  'INTP',
+                  textAlign: TextAlign.center, //mbti
+                  style: TextStyle(
+                    color: Color(0xFFFFDF60),
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
               const SizedBox(height: 10),
-              Container(width: 250, height: 30, //관심사
-              child: Text('#Dance #Food #Cat', textAlign: TextAlign.center,
-              style: TextStyle(color: Color.fromARGB(255, 102, 102, 102), fontSize: 13)),
+              Container(
+                width: 250,
+                height: 30, //관심사
+                child: Text(
+                  '#Dance #Food #Cat',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 102, 102, 102),
+                    fontSize: 13,
+                  ),
+                ),
               ),
               const SizedBox(height: 10),
-              Container(width: 250, height: 200, //자기소개 수정, 줄바꿈:\n
-              child: Text('저는 컴퓨터공학과를 졸업하고\n다른 일을 하면서 ios 앱 개발을\n공부하고 싶은 마음이 있었는데\n( ios 강의가 없었어요 🥲)\n시간도 없고 독학도 힘들 거 같아서\n내일배움카드로 학원을 알아보다가\n스파르타코딩클럽을 접하게 되었습니다.\n\n앞으로 잘 부탁드립니다! :)', textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.black, fontSize: 15)),
+              Container(
+                width: 250,
+                height: 200, //자기소개 수정, 줄바꿈:\n
+                child: Text(
+                  '안녕하세요 저는 내일배움캠프를 통해서 Flutter로 앱을 만들어 보는 것을 목표로 하고있습니다.\n팀프로젝트가 종료되고 지속적으로 개인프로젝트를 스토어에 런칭할 계획입니다.\n다양한 분야의 분들과 팀프로젝트를 해보는게 많이 기대가 됩니다!',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.black, fontSize: 15),
+                ),
               ),
             ],
           ),
