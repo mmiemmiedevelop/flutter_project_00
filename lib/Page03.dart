@@ -94,7 +94,7 @@ class Page03 extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               Container(width: 250, height: 200, //자기소개 수정, 줄바꿈:\n
-              child: Text('저는 컴퓨터공학과를 졸업하고\n다른 일을 하면서 ios 앱 개발을\n공부하고 싶은 마음이 있었는데\n( ios 강의가 없었어요 🥲)\n시간도 없고 독학도 힘들 거 같아서\n내일배움카드로 학원을 알아보다가\n스파르타코딩클럽을 접하게 되었습니다.\n\n앞으로 잘 부탁드립니다! :)', textAlign: TextAlign.center,
+              child: Text('서비스직→웹디자이너→앱개발자\n(목표!)\n타전공, 타직무였지만 앱 개발자가 되고 싶다는 마음 하나로\n내일배움캠프에 지원하게 되었습니다.\n기획부터 배포까지 스스로 할수있는\n1인 앱개발자가 되고싶습니다!', textAlign: TextAlign.center,
               style: TextStyle(color: Colors.black, fontSize: 15)),
               ),
             ],

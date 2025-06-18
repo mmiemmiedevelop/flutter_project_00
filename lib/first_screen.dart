@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:project00/second_screen.dart';
 import 'Page01.dart';
 import 'Page02.dart';
 import 'Page03.dart';
@@ -124,6 +123,7 @@ class FirstScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xFFFFF8DE),
       appBar: AppBar(
+        centerTitle: false,
         toolbarHeight: 60,
         automaticallyImplyLeading: false,
         backgroundColor: Color(0xFFFFF8DE),
@@ -143,7 +143,7 @@ class FirstScreen extends StatelessWidget {
           clipBehavior: Clip.none,
           children: [
             Positioned(
-              top: 100,
+              top: MediaQuery.of(context).padding.top + 48,
               right: 33,
               child: Image.asset('assets/images/icon_bookmark.png'),
             ),
